@@ -1,20 +1,22 @@
+<!DOCTYPE html>
 <html lang="en">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   Biology 2nd Paper - HSC 2026
+   Biology 1st Paper - HSC 2026
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="icon" href="https://www.bondipathshala.com.bd/files/logo.png" type="image/x-icon">
   <style>
    /* Custom scrollbar for the class list */
     .scrollbar-thin::-webkit-scrollbar {
       width: 6px;
     }
     .scrollbar-thin::-webkit-scrollbar-track {
-      background: #1e293b;
+      background: rgba(30, 41, 59, 0.7); /* Semi-transparent track */
       border-radius: 0.375rem;
     }
     .scrollbar-thin::-webkit-scrollbar-thumb {
@@ -37,28 +39,45 @@
     }
     /* Scrollable class list height */
     #classList {
-      max-height: 400px;
+      max-height: 400px; /* Adjust as needed */
       overflow-y: auto;
     }
     /* Selected class list item style */
     .watchli.selected {
-      background-color: #000000;
+      background-color: #007bff; /* Blue color from screenshot */
       color: #ffffff;
+    }
+
+    /* Background image style */
+    body {
+      background-image: url('https://img.freepik.com/free-vector/abstract-blue-circle-black-background-technology_1142-12714.jpg?t=st=1746541992~exp=1746545592~hmac=0a0242f10827fa6240cd3daf8fce772208de97db1a053c959e6f07d12e6e6d51&w=996');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      /* Ensure body background is visible */
+      background-color: transparent;
+    }
+
+    /* Semi-transparent background for main sections */
+    .main-section-bg {
+        background-color: rgba(30, 41, 59, 0.8); /* Adjust transparency as needed */
+    }
+
+    /* Add some shadow and rounded corners to main sections */
+    .main-section-card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
   </style>
  </head>
- <body class="bg-slate-900 min-h-screen flex flex-col">
-  <!-- Header -->
-  <header class="bg-black flex items-center gap-2 px-4 py-3">
+ <body class="min-h-screen flex flex-col">
+  <header class="bg-black bg-opacity-70 flex items-center gap-2 px-4 py-3">
    <img alt="Bondi Pathshala logo" class="h-8 w-auto" height="32" src="https://www.bondipathshala.com.bd/files/logo.png" width="auto"/>
    <h1 class="text-white font-bold text-lg ml-2">
     Biology 2nd Paper - HSC 2026
    </h1>
   </header>
-  <!-- Main content -->
   <main class="flex-1 p-4 flex flex-col md:flex-row md:gap-4">
-   <!-- Left content: video and pdf -->
-   <section aria-label="Live Class Section" class="bg-slate-800 rounded-lg p-4 flex flex-col w-full md:flex-1 md:order-1">
+   <section aria-label="Live Class Section" class="main-section-bg main-section-card rounded-lg p-4 flex flex-col w-full md:flex-1 md:order-1">
     <h2 class="text-white font-semibold mb-4">
      Live Class
     </h2>
@@ -72,8 +91,7 @@
      Download PDF
     </a>
    </section>
-   <!-- Right content: class list -->
-   <aside aria-label="Class List Section" class="bg-slate-800 rounded-lg p-4 flex flex-col w-full mt-4 md:w-72 md:mt-0 md:order-2">
+   <aside aria-label="Class List Section" class="main-section-bg main-section-card rounded-lg p-4 flex flex-col w-full mt-4 md:w-72 md:mt-0 md:order-2">
     <button class="bg-black text-white rounded-md px-4 py-2 mb-4 flex items-center justify-center gap-2" type="button">
      <i class="fas fa-plus">
      </i>
@@ -111,7 +129,7 @@
     কোষ ও কোষের গঠন পর্ব -০৮
   </li>
   <li class="watchli cursor-pointer text-white px-3 py-2 rounded-md hover:bg-slate-700" data-vid="lRPPRRxGKzg" data-npdf="20240626-1719387029-QgRnVfQ0.pdf" tabindex="0">
-    কোষ ও কোষের গঠন পর্ব -০৯
+    কোষ ও কোষের গঠনের CQ solving
   </li>
   <li class="watchli cursor-pointer text-white px-3 py-2 rounded-md hover:bg-slate-700" data-vid="oEQc1LsygKg" data-npdf="20240701-1719841089-UuHYXphB.pdf" tabindex="0">
     কোষ ও কোষের গঠনের CQ solving
@@ -171,7 +189,7 @@
     কোষ রসায়ন - পর্ব ০৪
   </li>
   <li class="watchli cursor-pointer text-white px-3 py-2 rounded-md hover:bg-slate-700" data-vid="26788gbIqPU" data-npdf="20241211-1733859880-SLLaMIuD.pdf" tabindex="0">
-    কোষ রসায়ন - পর্ব ৫.১
+    কোষ রসায়ন - পর্ব ৫.1
   </li>
   <li class="watchli cursor-pointer text-white px-3 py-2 rounded-md hover:bg-slate-700" data-vid="GYnfs4KJfUg" data-npdf="20241211-1733859880-SLLaMIuD.pdf" tabindex="0">
     কোষ রসায়ন - পর্ব ৫.২
@@ -189,7 +207,7 @@
     নগ্নবীজী ও আবৃতবীজী - পর্ব ০৩
   </li>
   <li class="watchli cursor-pointer text-white px-3 py-2 rounded-md hover:bg-slate-700" data-vid="XDkCF_VgYwk" data-npdf="20250129-1738089706-dlXBsmeH.pdf" tabindex="0">
-    নগ্নবীজী ও আবৃতবীজী - পর্ব ৪.১
+    নগ্নবীজী ও আবৃতবীজী - পর্ব ৪.1
   </li>
   <li class="watchli cursor-pointer text-white px-3 py-2 rounded-md hover:bg-slate-700" data-vid="pYBFH10fHRI" data-npdf="20250129-1738089706-dlXBsmeH.pdf" tabindex="0">
     নগ্নবীজী ও আবৃতবীজী - পর্ব ৪.২
@@ -242,8 +260,7 @@
     </ul>
    </aside>
   </main>
-  <!-- Footer -->
-  <footer class="bg-black text-white text-center py-2 text-sm">
+  <footer class="bg-black bg-opacity-70 text-white text-center py-2 text-sm">
    Join our
    <a class="text-red-600 hover:underline" href="#">
     Facebook Group
@@ -261,6 +278,45 @@
      });
    }
 
+   // Function to update the content and history
+   function updateContentAndHistory(videoId, pdfFile, shouldPushState = true) {
+       if(videoId) {
+           videoPlayer.src = `https://www.youtube.com/embed/${videoId}`;
+       } else {
+           videoPlayer.src = '';
+       }
+
+       if(pdfFile) {
+           pdfDownload.href = `https://www.bondipathshala.com.bd/pdf/${pdfFile}`;
+           pdfDownload.style.display = 'flex';
+       } else {
+           pdfDownload.removeAttribute('href');
+           pdfDownload.style.display = 'none';
+       }
+
+       // Try to update history regardless of protocol
+       try {
+           const url = new URL(window.location.href);
+           if (videoId) {
+               url.searchParams.set('vid', videoId);
+           } else {
+               url.searchParams.delete('vid');
+           }
+           if (pdfFile) {
+               url.searchParams.set('pdf', pdfFile);
+           } else {
+               url.searchParams.delete('pdf');
+           }
+           
+           if (shouldPushState) {
+               history.pushState({ videoId: videoId, pdfFile: pdfFile }, '', url.toString());
+           }
+       } catch (e) {
+           console.log('History update failed:', e);
+       }
+   }
+
+   // Event listener for clicks on the class list
    classList.addEventListener('click', (e) => {
      const li = e.target.closest('li.watchli');
      if (!li) return;
@@ -271,12 +327,7 @@
      const videoId = li.getAttribute('data-vid');
      const pdfFile = li.getAttribute('data-npdf');
 
-     if(videoId) {
-       videoPlayer.src = `https://www.youtube.com/embed/${videoId}`;
-     }
-     if(pdfFile) {
-       pdfDownload.href = `https://www.bondipathshala.com.bd/pdf/${pdfFile}`;
-     }
+     updateContentAndHistory(videoId, pdfFile, true);
    });
 
    // Also allow keyboard navigation (Enter key) for accessibility
@@ -292,14 +343,58 @@
        const videoId = li.getAttribute('data-vid');
        const pdfFile = li.getAttribute('data-npdf');
 
-       if(videoId) {
-         videoPlayer.src = `https://www.youtube.com/embed/${videoId}`;
-       }
-       if(pdfFile) {
-         pdfDownload.href = `https://www.bondipathshala.com.bd/pdf/${pdfFile}`;
-       }
+       updateContentAndHistory(videoId, pdfFile, true);
      }
    });
+
+   // Handle initial load and back/forward navigation
+   window.addEventListener('load', () => {
+       try {
+           const urlParams = new URLSearchParams(window.location.search);
+           const initialVideoId = urlParams.get('vid');
+           const initialPdfFile = urlParams.get('pdf');
+
+           if (initialVideoId || initialPdfFile) {
+               const selectedLi = document.querySelector(`li.watchli[data-vid="${initialVideoId}"][data-npdf="${initialPdfFile}"]`);
+               if (selectedLi) {
+                   clearSelected();
+                   selectedLi.classList.add('selected');
+                   updateContentAndHistory(initialVideoId, initialPdfFile, false);
+                   selectedLi.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+               } else {
+                   updateContentAndHistory(null, null, false);
+                   history.replaceState({}, '', window.location.pathname);
+               }
+           } else {
+               history.replaceState({}, '', window.location.pathname);
+               pdfDownload.style.display = 'none';
+           }
+       } catch (e) {
+           console.log('Initial load handling failed:', e);
+       }
+   });
+
+   // Handle browser back/forward button
+   window.addEventListener('popstate', (event) => {
+       try {
+           if (event.state && (event.state.videoId || event.state.pdfFile)) {
+               updateContentAndHistory(event.state.videoId, event.state.pdfFile, false);
+               clearSelected();
+               const selectedLi = document.querySelector(`li.watchli[data-vid="${event.state.videoId}"][data-npdf="${event.state.pdfFile}"]`);
+               if (selectedLi) {
+                   selectedLi.classList.add('selected');
+                   selectedLi.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+               }
+           } else {
+               updateContentAndHistory(null, null, false);
+               clearSelected();
+           }
+       } catch (e) {
+           console.log('Popstate handling failed:', e);
+       }
+   });
+
+
   </script>
  </body>
 </html>
